@@ -1,0 +1,12 @@
+plugins {
+    id "com.gradle.enterprise" version "3.1.1"
+}
+
+rootProject.name = 'build-scan-tests'
+
+gradleEnterprise {
+    buildScan {
+        server = 'https://gradle-enterprise.elastic.co'
+        publishAlways()
+    }
+}
